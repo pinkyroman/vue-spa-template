@@ -1,0 +1,82 @@
+/* https://www.taebaek.go.kr/www/contents.do?key=1791 */
+@font-face {
+  font-family: "milkyway";
+  src: url("./fonts/TAEBAEK milkyway.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* https://fonts.google.com/specimen/Single+Day */
+@font-face {
+  font-family: "single-day";
+  src: url("./fonts/SingleDay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*  https://sun.fo/suite/ */
+@font-face {
+  font-family: "suite-var";
+  src: url("./fonts/SUITE-Variable.woff2") format("woff2-variations");
+  font-weight: 300 900;
+}
+@font-face {
+  font-family: "suite";
+  src: url("./fonts/SUITE-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "suite";
+  src: url("./fonts/SUITE-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "suite";
+  src: url("./fonts/SUITE-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "suite";
+  src: url("./fonts/SUITE-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: "suite";
+  src: url("./fonts/SUITE-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "suite";
+  src: url("./fonts/SUITE-ExtraBold.woff2") format("woff2");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "suite";
+  src: url("./fonts/SUITE-Heavy.woff2") format("woff2");
+  font-weight: 900;
+}
+
+/* https://github.com/hurss/fonts?tab=readme-ov-file */
+@font-face {
+  font-family: "dos-handwrite";
+  src: url("./fonts/DOSPilgi.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* https://tsbudae.com/brand/?c=72 */
+@font-face {
+  font-family: "tsbudae";
+  src: url("./fonts/tsbudae.ttf") format("truetype");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "tsbudae";
+  src: url("./fonts/tsbudae-medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "tsbudae";
+  src: url("./fonts/tsbudae-bold.ttf") format("truetype");
+  font-weight: 700;
+}
