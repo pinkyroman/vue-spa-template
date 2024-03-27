@@ -1,5 +1,0 @@
-# https://bun.sh/docs/runtime/bunfig
-
-[install]
-#auto = "auto"
-peer = true # install peer dependencies
