@@ -36,6 +36,8 @@ module.exports = {
     "prettier",
 
     "plugin:@intlify/vue-i18n/recommended",
+
+    "plugin:storybook/recommended",
   ],
 
   plugins: [
