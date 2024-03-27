@@ -34,12 +34,13 @@ module.exports = {
 
     // https://github.com/prettier/eslint-config-prettier#readme
     "prettier",
+
+    "plugin:@intlify/vue-i18n/recommended",
   ],
 
   plugins: [
     "@typescript-eslint",
     "vue", // https://eslint.vuejs.org/user-guide/#why-doesn-t-it-work-on-vue-files
-    "vue-i18n", // https://eslint-plugin-vue-i18n.intlify.dev/intro.html
     "import", // https://github.com/import-js/eslint-plugin-import
   ],
 
@@ -55,5 +56,32 @@ module.exports = {
 
     // Prettier plugin not required as we're using eslint-config-prettier to disable conflicting rules
     // Custom rules or overrides can go here
+
+    // https://eslint-plugin-vue-i18n.intlify.dev/started.html
+    "@intlify/vue-i18n/valid-message-syntax": "warn",
+    "@intlify/vue-i18n/no-duplicate-keys-in-locale": [
+      "error",
+      {
+        ignoreI18nBlock: true,
+      },
+    ],
+    "@intlify/vue-i18n/no-missing-keys-in-other-locales": "warn",
+    "@intlify/vue-i18n/no-unknown-locale": "warn",
+    "@intlify/vue-i18n/no-dynamic-keys": "error",
+    "@intlify/vue-i18n/no-unused-keys": [
+      "error",
+      {
+        extensions: [".js", ".vue"],
+      },
+    ],
+    "@intlify/vue-i18n/prefer-sfc-lang-attr": "warn",
+  },
+
+  settings: {
+    // https://eslint-plugin-vue-i18n.intlify.dev/started.html
+    "vue-i18n": {
+      localeDir: "./src/locales/*.{json,yaml,yml}",
+      messageSyntaxVersion: "^9.0.0",
+    },
   },
 };
