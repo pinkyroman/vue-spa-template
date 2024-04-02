@@ -8,7 +8,7 @@ document.documentElement.setAttribute("data-theme", "light");
   <article class="prose">
     <div>Welcome to Vite + Vue 3 + TypeScript</div>
     <div class="flex justify-center">
-      <XButton color="secondary" wide>버튼</XButton>
+      <XButton color="accent" >버튼</XButton>
     </div>
   </article>
 </template>
