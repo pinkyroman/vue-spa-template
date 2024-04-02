@@ -38,6 +38,9 @@ module.exports = {
     "plugin:@intlify/vue-i18n/recommended",
 
     "plugin:storybook/recommended",
+
+    // https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#eslint
+    "./.eslintrc-auto-import.json",
   ],
 
   plugins: [
@@ -53,6 +56,9 @@ module.exports = {
     // Vue specific rules
     "vue/no-unused-vars": "error",
 
+    // https://github.com/unplugin/unplugin-auto-import#eslint
+    "no-undef": "off", 
+    
     // TypeScript specific rules
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
 
