@@ -6,7 +6,11 @@ import "./css/style.scss";
 import "./assets/fonts.css";
 
 import App from "./App.vue";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {
+  FontAwesomeIcon,
+  FontAwesomeLayers,
+  FontAwesomeLayersText,
+} from "@fortawesome/vue-fontawesome";
 
 const app = createApp(App);
 const i18n = createI18n({
@@ -15,5 +19,8 @@ const i18n = createI18n({
 });
 
 app.use(i18n);
-app.component("font-awesome-icon", FontAwesomeIcon);
+app
+  .component("FontAwesomeIcon", FontAwesomeIcon)
+  .component("FontAwesomeLayers", FontAwesomeLayers)
+  .component("FontAwesomeLayersText", FontAwesomeLayersText);
 app.mount("#app");

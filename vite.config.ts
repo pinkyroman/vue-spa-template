@@ -32,11 +32,11 @@ export default defineConfig({
       // global imports to register
       imports: [
         // presets
-        'vue',
+        "vue",
         // 'vue-router',
         // custom
         {
-          'vue-i18n': ['createI18n', 'useI18n'],
+          "vue-i18n": ["createI18n", "useI18n"],
           // pinia: ['defineStore', 'storeToRefs', 'acceptHMRUpdate'],
         },
       ],
@@ -46,13 +46,13 @@ export default defineConfig({
       dirs: [
         // './hooks',
         // './composables' // only root modules
-        './composables/**', // all nested modules
+        "./src/composables/**", // all nested modules
       ],
 
       dts: true, // https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#typescript
       eslintrc: {
         enabled: true, // https://github.com/unplugin/unplugin-auto-import?tab=readme-ov-file#eslint
-      }
+      },
     }),
     tsconfigPaths(),
   ],

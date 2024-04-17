@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-import forms from "@tailwindcss/forms";
 import typography from "@tailwindcss/typography";
 import aspectRatio from "@tailwindcss/aspect-ratio";
 import containerQueries from "@tailwindcss/container-queries";
@@ -10,15 +9,16 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
-    // "./src/pages/**/*.{vue,js,ts,jsx,tsx}",
+    "./.storybook/**/*.{html,js,ts}", // Storybook 설정 파일 포함
   ],
   theme: {
     extend: {},
   },
-  darkMode: "media", // https://tailwindcss.com/docs/dark-mode
+  // darkMode: "media", // https://tailwindcss.com/docs/dark-mode
+  darkMode: ["class", '[data-mode="dark"]'], // https://storybook.js.org/recipes/tailwindcss
   // https://tailwindcss.com/docs/plugins#official-plugins
   // https://daisyui.com/docs/layout-and-typography/#-1 (typography 다음 반드시 daisyUI를 추가)
-  plugins: [forms, typography, daisyUI, aspectRatio, containerQueries],
+  plugins: [typography, daisyUI, aspectRatio, containerQueries],
 
   daisyui: {
     // https://daisyui.com/docs/config/
