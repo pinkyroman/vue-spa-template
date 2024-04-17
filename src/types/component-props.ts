@@ -32,6 +32,7 @@ export type FaIconSize =
 
 export interface XButtonProps {
   label?: string; // Button label
+  iconColor?: string; // Button icon color
   icon?: IconDefinition; // Button icon
   iconSize?: FaIconSize; // Button icon size
   iconBeat?: boolean; // Button icon with beat animation

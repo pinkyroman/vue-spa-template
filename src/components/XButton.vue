@@ -45,6 +45,7 @@ const btnClass = computed(() => [
   <button :class="btnClass">
     <FontAwesomeIcon
       v-if="!!icon"
+      :class="iconColor"
       :icon="icon"
       :size="iconSize"
       :beat="iconBeat"

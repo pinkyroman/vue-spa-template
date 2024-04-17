@@ -16,20 +16,28 @@ const { fas, fab, far } = useFontAwesomeFree();
     <div>Welcome to Vite + Vue 3 + TypeScript</div>
     <div class="flex justify-center">
       <XButton
-        class="text-red-500"
-        color="accent"
-        :icon="fas('gear')"
+        icon-color="text-pink-500"
+        color="secondary"
+        :icon="fas('heart')"
         icon-size="xl"
-        icon-beat-fade
-        label="설정"
+        icon-bounce
+        circle
+        outline
       />
       <XSpace />
-      <XButton class="mr-2 text-red-500" color="warning" :icon="fas('cancel')"
-        >취소</XButton
-      >
-      <XButton class="text-gray-100" color="primary" :icon="fas('check')"
-        >확인</XButton
-      >
+      <XButton
+        class="mr-2 text-red-500"
+        label="취소"
+        color="warning"
+        :icon="fas('cancel')"
+      />
+      <XButton
+        class="text-green-500"
+        label="확인"
+        color="neutral"
+        icon-color="text-green-500"
+        :icon="fas('check')"
+      />
     </div>
   </article>
 </template>
